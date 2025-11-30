@@ -120,6 +120,7 @@
             opacity: 0.9;
         }
     </style>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
     <div class="game-container">
@@ -128,7 +129,7 @@
             <span class="score-label">Счет:</span>
             <span id="score">0</span>
         </div>
-        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <canvas id="gameCanvas" width="300" height="300"></canvas>
         <div class="controls-container">
             <div class="controls-row">
                 <button class="control-btn" id="btnUp" aria-label="Вверх">
@@ -161,7 +162,7 @@
     </div>
     <script>
         // Константы игры
-        const CANVAS_SIZE = 400;
+        const CANVAS_SIZE = 300;
         const CELL_SIZE = 16;
         const GRID_SIZE = CANVAS_SIZE / CELL_SIZE; // 25x25 ячеек
 
